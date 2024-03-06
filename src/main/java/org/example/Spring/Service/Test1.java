@@ -1,4 +1,4 @@
-package org.example.Spring;
+package org.example.Spring.Service;
 
 import org.example.Spring.Entity.Cat;
 import org.example.Spring.Entity.Dog;

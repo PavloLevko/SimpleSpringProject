@@ -10,7 +10,7 @@
 
 
     <bean id = "myPet"
-          class="org.example.Spring.Entity.Cat">
+          class="org.example.Spring.Entity.Dog">
 
     </bean>
 
