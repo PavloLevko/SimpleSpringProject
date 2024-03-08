@@ -1,8 +1,17 @@
 package org.example.Spring.Entity;
 
 public class Cat implements Pet{
+    private String name;
     public Cat() {
-        System.out.println("Dog is created");
+        System.out.println("Cat is created");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
