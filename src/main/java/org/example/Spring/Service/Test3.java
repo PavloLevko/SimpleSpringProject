@@ -8,10 +8,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test3 {
     public static void main(String[] args) {
         var context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        Pet pet = context.getBean("myPet", Pet.class);
 
-//        Pet pet = new Dog();
-        Human human = new Human(pet);
+        Human human = context.getBean("human", Human.class );
         human.callMyPet();
+        System.out.println(human.getAge());
+        System.out.println(human.getName());
+
+        context.close();
     }
 }
