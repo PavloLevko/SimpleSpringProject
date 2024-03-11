@@ -9,8 +9,9 @@
 
 
     <bean id = "myPet"
-          class="org.example.Spring.Entity.Cat" scope="prototype">
-
+          class="org.example.Spring.Entity.Dog"
+    init-method="init"
+    destroy-method="destroy">
     </bean>
 
 
