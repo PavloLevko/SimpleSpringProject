@@ -1,8 +1,9 @@
 package org.example.Spring.Entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("mouse")
 public class Mouse implements Pet {
 
     public Mouse() {
@@ -13,4 +14,5 @@ public class Mouse implements Pet {
     public void say() {
         System.out.println("Mouse sey...");
     }
+
 }

@@ -1,5 +1,8 @@
 package org.example.Spring.Entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Dog implements Pet {
     public Dog() {
         System.out.println("Dog is created");

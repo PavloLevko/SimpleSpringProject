@@ -1,5 +1,7 @@
 package org.example.Spring.Entity;
 
+import org.springframework.stereotype.Component;
+
 public class Cat implements Pet{
     private String name;
     public Cat() {

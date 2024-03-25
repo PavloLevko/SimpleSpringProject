@@ -1,11 +1,25 @@
 package org.example.Spring.Entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("human")
 public class Human {
+    @Autowired
+    @Qualifier(value = "mouse")
    private Pet pet;
+    @Value("99")
    private int age;
+    @Value("Jon")
    private String name;
 
-   public void callMyPet(){
+//    public Human(Pet pet) {
+//        this.pet = pet;
+//    }
+
+    public void callMyPet(){
        System.out.println("Where is my pet?");
        pet.say();
    }
